@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useRef, useState } from "react";
 
 const Login = () => {
   const [newUser, setNewUser] = useState(false);
@@ -12,13 +12,12 @@ const Login = () => {
 
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
-    const confirmPassword =
-      confirmPasswordRef.current.value;
+    const confirmPassword = confirmPasswordRef.current.value;
   };
 
   return (
     <div>
-      {newUser ? <p>Create account</p> : <p>Log in</p>}
+      {newUser ? <p>Create Account</p> : <p>Log In</p>}
       <form className='login-form' onSubmit={handleSubmit}>
         <div className='login-form__input'>
           <label htmlFor='email'>Email: </label>
@@ -41,7 +40,7 @@ const Login = () => {
         {newUser && (
           <div className='login-form__input'>
             <label htmlFor='passConfirm'>
-              Password Confirmation:{" "}
+              Confirm Password :{" "}
             </label>
             <input
               type='password'
@@ -52,7 +51,7 @@ const Login = () => {
           </div>
         )}
         <div>
-          <p>I am a new user. </p>
+          <p>New User ? </p>
           <input
             type='checkbox'
             name='new-user'
