@@ -1,0 +1,25 @@
+nav {
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 0 4rem;
+  @include flex(row, space-between);
+  div {
+    p {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
+  ul {
+    @include flex;
+    li {
+      margin-left: 2rem;
+      font-size: 1.2rem;
+      a {
+        color: black;
+      }
+    }
+  }
+}

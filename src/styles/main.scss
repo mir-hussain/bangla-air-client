@@ -6,6 +6,14 @@
   text-decoration: none;
 }
 
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+//helper
+
+@import "./helper/tools";
+
 //page
 
 @import "./home";
@@ -13,3 +21,5 @@
 @import "./login";
 
 // components
+
+@import "./navbar";
